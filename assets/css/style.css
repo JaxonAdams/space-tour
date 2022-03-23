@@ -1,5 +1,6 @@
-body {
+body, html {
     height: 100%;
+    max-width: 100%;
     font-family: 'Bellefair', serif;
     color: #fff;
     background-repeat: no-repeat;
@@ -103,4 +104,54 @@ header {
 
 .explore-circle p {
     font-size: 32px;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .landing-page-body {
+        background-image: url('../home/background-home-tablet.jpg');
+    }
+
+    .header-divider {
+        display: none;
+    }
+    
+    .navbar {
+        margin: 0px;
+        padding-right: 0px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .page-number {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .home-text {
+        position: static;
+        text-align: center;
+    }
+
+    .explore-circle {
+        position: static;
+    }
 }
