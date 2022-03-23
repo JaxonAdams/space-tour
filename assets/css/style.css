@@ -1,0 +1,106 @@
+body {
+    height: 100%;
+    font-family: 'Bellefair', serif;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.landing-page-body {
+    background-image: url('../home/background-home-desktop.jpg');
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 2rem;
+}
+
+.header-divider {
+    height: 1px;
+    width: 500px;
+    background-color: #979797;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 39px 165px 38px 123px;
+    backdrop-filter: blur(81.5485px);
+    list-style: none;
+}
+
+.nav-link {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    padding-bottom: 35px;
+    letter-spacing: 3px;
+}
+
+.page-number {
+    font-weight: bold;
+}
+
+.active-page {
+    border-bottom: 3px solid #fff;
+}
+
+.home-text {
+    position: absolute;
+    left: 165px;
+    top: 387px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 445px;
+    height: 450px;
+}
+
+.home-text h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: lighter;
+    font-size: 28px;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+}
+
+.home-text h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 150px;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.home-text p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: lighter;
+}
+
+.explore-circle {
+    position: absolute;
+    width: 274px;
+    height: 274px;
+    left: 1301px;
+    top: 495px;
+    background-color: #fff;
+    color: #0b0d17;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.explore-circle p {
+    font-size: 32px;
+}

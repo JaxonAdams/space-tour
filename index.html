@@ -5,23 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Barlow:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
   
-  <title>Frontend Mentor | Space tourism website</title>
+  <title>Visit Space</title>
 </head>
-<body>
+<body class="landing-page-body">
+  <header>
+    <img src="./assets/shared/logo.svg" alt="logo" class="logo">
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <div class="header-divider"></div>
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
+    <nav>
+      <ul class="navbar">
+        <li><a href="#" class="nav-link active-page"><span class="page-number">00</span>  HOME</a></li>
+        <li><a href="#" class="nav-link"><span class="page-number">01</span>  DESTINATION</a></li>
+        <li><a href="#" class="nav-link"><span class="page-number">02</span>  CREW</a></li>
+        <li><a href="#" class="nav-link"><span class="page-number">03</span>  TECHNOLOGY</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  Explore
-
+  <main>
+    <section class="home-text">
+      <h2>SO, YOU WANT TO TRAVEL TO</h2>
+      <h1>SPACE</h1>
+      <p>
+        Let's face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we'll give you a truly out of this world experience!
+      </p>
+    </section>
+    <section class="explore-circle">
+      <p>EXPLORE</p>
+    </section>
+  </main>
 </body>
 </html>
