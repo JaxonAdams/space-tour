@@ -1,1 +1,90 @@
+/* variables defined */
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #0B0D17;
+    --tertiary-color: #D0D6F9;
+}
 
+html, body {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.root {
+    height: 100%;
+}
+
+.app {
+    height: 100%;
+}
+
+/* header styling */
+header {
+    width: 95vw;
+    padding: 0 0 0 5vw;
+    position: relative;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+}
+
+.header-line {
+    width: 25vw;
+    height: 1px;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    margin-left: 50px;
+    position: absolute;
+    top: 10vh;
+    left: 12vw;
+    z-index: 2;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-link {
+    margin: 0;
+    padding: 1.5rem 0;
+}
+
+.nav-link span {
+    font-weight: bold;
+}
+
+.nav-link p {
+    font-weight: 300;
+}
+
+.current-page {
+    border-bottom: 3px solid var(--primary-color);
+}
+/* end header styling */
+
+/* home styling */
+.homepage {
+    background: url(./assets/home/background-home-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+/* end home styling */
