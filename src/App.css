@@ -95,6 +95,10 @@ header {
     border-bottom: 3px solid var(--primary-color);
 }
 
+.current-page:hover {
+    padding: 1.5rem 0;
+}
+
 .menu-btn {
     display: none;
 }
