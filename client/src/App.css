@@ -3,6 +3,9 @@
     --primary-color: #FFFFFF;
     --secondary-color: #0B0D17;
     --tertiary-color: #D0D6F9;
+    --primary-font: 'Barlow', sans-serif;
+    --primary-condensed: 'Barlow Condensed', sans-serif;
+    --secondary-font: 'Bellefair', serif;
 }
 
 html, body {
@@ -11,6 +14,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    font-family: var(--primary-font);
 }
 
 .root {
@@ -66,6 +70,9 @@ header {
     margin: 0;
     padding: 1.5rem 0;
     transition: border 0.3s ease;
+    font-family: var(--primary-condensed);
+    font-size: 16px;
+    letter-spacing: 2.7px;
 }
 
 .nav-link:hover {
@@ -93,5 +100,75 @@ header {
     background-position: center;
     background-size: cover;
     height: 100vh;
+}
+
+.home-main {
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.home-info {
+    width: 25vw;
+}
+
+.home-txt-lg {
+    font-family: var(--primary-condensed);
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    margin: 0;
+}
+
+.home-title {
+    font-family: var(--primary-font);
+    font-size: 150px;
+    letter-spacing: 0px;
+    margin: 0;
+}
+
+.home-txt-sm {
+    font-family: var(--primary-font);
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.explore-btn {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 274px;
+    height: 274px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.explore-btn p {
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--secondary-color);
+    position: relative;
+    z-index: 2;
+}
+
+.explore-effect {
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    z-index: 0;
+    transition: all 0.5s ease;
+}
+
+.explore-btn:hover .explore-effect {
+    width: 450px;
+    height: 450px;
 }
 /* end home styling */
