@@ -228,6 +228,8 @@ header {
     justify-content: flex-start;
     list-style: none;
     width: 40vw;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .dest-link {
@@ -242,6 +244,57 @@ header {
 .dest-link:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
     padding: 1.2rem 0;
+}
+
+.dest-info {
+    width: 445px;
+}
+
+.dest-info-title {
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.dest-info-txt {
+    font-family: var(--primary-font);
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.dest-line {
+    position: static;
+    margin: 54px 0 28px 0;
+    margin-bottom: 28px;
+    margin-top: 54px;
+    width: 445px;
+}
+
+.dest-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.dest-fact-container {
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.dest-subtitle {
+    font-family: var(--primary-condensed);
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 2.36px;
+}
+
+.dest-fact {
+    font-family: var(--secondary-font);
+    font-size: 28px;
+    line-height: 32.09px;  
+    margin-top: 0;  
 }
 /* end destination styling */
 
