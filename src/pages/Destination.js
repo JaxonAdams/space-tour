@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import moon from '../assets/destination/image-moon.png';
 
@@ -6,6 +6,8 @@ import Header from '../components/Header';
 import DestInfo from '../components/DestInfo';
 
 const Destination = () => {
+    const [currentDest, setCurrentDest] = useState('moon');
+
     return (
         <div className='destination'>
             <Header />
@@ -14,16 +16,16 @@ const Destination = () => {
                 <img className='destination-img' src={moon} alt='your destination' />
                 <div className='dest-info-container'>
                     <ul className='dest-nav'>
-                        <li className='dest-link'>
+                        <li className={`dest-link ${currentDest === 'moon' && 'current-page'}`}>
                             MOON
                         </li>
-                        <li className='dest-link'>
+                        <li className={`dest-link`}>
                             MARS
                         </li>
-                        <li className='dest-link'>
+                        <li className={`dest-link`}>
                             EUROPA
                         </li>
-                        <li className='dest-link'>
+                        <li className={`dest-link`}>
                             TITAN
                         </li>
                     </ul>
