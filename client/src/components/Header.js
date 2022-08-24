@@ -6,6 +6,8 @@ import logo from '../assets/shared/logo.svg';
 const Header = () => {
     // link for current page should be underlined
     const [activeLink, setActiveLink] = useState('');
+    // menu open
+    const [menuOpen, setMenuOpen] = useState(false);
 
     // check current location and update state
     useEffect(() => {
@@ -23,7 +25,7 @@ const Header = () => {
             <div className='header-line' />
             <div className='header-flex'>
                 <img className='logo' src={logo} alt='logo' />
-                <ul className='navbar'>
+                <ul className={`navbar ${menuOpen && 'show'}`}>
                     <li className={`nav-link ${activeLink === 'home' && 'current-page'}`}>
                         <p><span>00</span> HOME</p>
                     </li>
@@ -37,6 +39,11 @@ const Header = () => {
                         <p><span>03</span> TECHNOLOGY</p>
                     </li>
                 </ul>
+                <div className={`menu-btn ${menuOpen && 'close'}`} onClick={() => setMenuOpen(!menuOpen)}>
+                    <div className='menu-line' />
+                    <div className='menu-line' />
+                    <div className='menu-line' />
+                </div>
             </div>
         </header>
     );

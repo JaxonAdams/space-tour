@@ -92,6 +92,10 @@ header {
 .current-page {
     border-bottom: 3px solid var(--primary-color);
 }
+
+.menu-btn {
+    display: none;
+}
 /* end header styling */
 
 /* home styling */
@@ -191,6 +195,14 @@ header {
         margin-bottom: 0;
     }
 
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .nav-link span {
+        display: none;
+    }
+
     .home-main {
         flex-direction: column;
         align-items: center;
@@ -198,7 +210,7 @@ header {
     }
 
     .home-info {
-        width: 60vw;
+        width: 75vw;
         text-align: center;
         margin-bottom: 20vh;
     }
@@ -231,7 +243,120 @@ header {
         width: 400px;
         height: 400px;
     }
-    /* header and homepage */
+    /* end header and homepage */
 }
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 580px) {
+    /* header and homepage */
+    .homepage {
+        background: url(./assets/home/background-home-mobile.jpg);
+        background-size: cover;
+    }
+
+    .home-info {
+        margin-bottom: 10vh;
+    }
+
+    .home-txt-lg {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .home-title {
+        font-size: 80px;
+    }
+
+    .home-txt-sm {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .explore-btn {
+        width: 200px;
+        height: 200px;
+    }
+
+    .explore-effect {
+        width: 200px;
+        height: 200px;
+    }
+
+    .explore-btn:hover .explore-effect {
+        width: 300px;
+        height: 300px;
+    }
+
+    .menu-btn {
+        position: relative;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 30px;
+        margin: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .menu-line {
+        width: 30px;
+        height: 3px;
+        background-color: var(--primary-color);
+        transition: all 0.3s ease;
+    }
+
+    .close {
+        transform: rotate(180deg);
+    }
+
+    .close .menu-line:nth-child(1) {
+        transform: rotate(45deg) translateY(14.5px) translateX(5px);
+    }
+      
+    .close .menu-line:nth-child(2) {
+        opacity: 0;
+    }
+      
+    .close .menu-line:nth-child(3) {
+        transform: rotate(-45deg) translateY(-14.5px) translateX(5px);
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        visibility: hidden;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .navbar.show {
+        visibility: visible;
+    }
+
+    .current-page {
+        border-bottom: none;
+        border-right: 3px solid var(--primary-color);
+    }
+
+    .nav-link:hover {
+        border-bottom: none;
+        border-right: 3px solid rgba(255, 255, 255, 0.5);
+    }
+    /* end header and homepage */
+}
+
+@media screen and (max-width: 375px) {
+    .home-info {
+        margin-bottom: 2vh;
+    }
+
+    .home-title {
+        font-size: 50px;
+    }
+
+    .home-txt-sm {
+        font-size: 12px;
+    }
+}
