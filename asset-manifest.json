@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/space-tour/static/css/main.2abf6b0c.css",
-    "main.js": "/space-tour/static/js/main.2ed3a71c.js",
+    "main.css": "/space-tour/static/css/main.78787bdf.css",
+    "main.js": "/space-tour/static/js/main.f102d1c3.js",
     "static/media/background-home-desktop.jpg": "/space-tour/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
     "static/media/background-home-tablet.jpg": "/space-tour/static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
     "static/media/background-home-mobile.jpg": "/space-tour/static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
     "index.html": "/space-tour/index.html",
     "static/media/logo.svg": "/space-tour/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
-    "main.2abf6b0c.css.map": "/space-tour/static/css/main.2abf6b0c.css.map",
-    "main.2ed3a71c.js.map": "/space-tour/static/js/main.2ed3a71c.js.map"
+    "main.78787bdf.css.map": "/space-tour/static/css/main.78787bdf.css.map",
+    "main.f102d1c3.js.map": "/space-tour/static/js/main.f102d1c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.2abf6b0c.css",
-    "static/js/main.2ed3a71c.js"
+    "static/css/main.78787bdf.css",
+    "static/js/main.f102d1c3.js"
   ]
 }
