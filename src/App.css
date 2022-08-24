@@ -73,12 +73,16 @@ header {
     font-family: var(--primary-condensed);
     font-size: 16px;
     letter-spacing: 2.7px;
-    cursor: pointer;
 }
 
 .nav-link:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
     padding: 1.2rem 0;
+}
+
+.nav-link a {
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 .nav-link span {
@@ -143,6 +147,10 @@ header {
     font-size: 18px;
     line-height: 32px;
     margin: 0;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .explore-btn {

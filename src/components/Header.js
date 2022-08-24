@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 // import logo
 import logo from '../assets/shared/logo.svg';
@@ -11,10 +12,10 @@ const Header = () => {
 
     // check current location and update state
     useEffect(() => {
-        if (window.location.pathname === '/') {
+        if (window.location.pathname === '/space-tour' || window.location.pathname === '') {
             setActiveLink('home');
         } else {
-            setActiveLink(window.location.pathname.split('/'));
+            setActiveLink(window.location.pathname.split('/')[2]);
         };
     }, []);
 
@@ -27,15 +28,19 @@ const Header = () => {
                 <img className='logo' src={logo} alt='logo' />
                 <ul className={`navbar ${menuOpen && 'show'}`}>
                     <li className={`nav-link ${activeLink === 'home' && 'current-page'}`}>
-                        <p><span>00</span> HOME</p>
+                        <Link to='/space-tour'>
+                            <p><span>00</span> HOME</p>
+                        </Link>
                     </li>
-                    <li className={`nav-link`}>
-                        <p><span>01</span> DESTINATION</p>
+                    <li className={`nav-link ${activeLink === 'destination' && 'current-page'}`}>
+                        <Link to='/space-tour/destination'>
+                            <p><span>01</span> DESTINATION</p>
+                        </Link>
                     </li>
-                    <li className={`nav-link`}>
+                    <li className={`nav-link ${activeLink === 'crew' && 'current-page'}`}>
                         <p><span>02</span> CREW</p>
                     </li>
-                    <li className={`nav-link`}>
+                    <li className={`nav-link ${activeLink === 'technology' && 'current-page'}`}>
                         <p><span>03</span> TECHNOLOGY</p>
                     </li>
                 </ul>
