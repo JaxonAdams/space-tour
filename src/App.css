@@ -8,21 +8,18 @@
     --secondary-font: 'Bellefair', serif;
 }
 
-html, body {
+html {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100%;
     font-family: var(--primary-font);
 }
 
-.root {
-    height: 100%;
-}
-
-.app {
-    height: 100%;
+body {
+    min-height: 100vh;
+    font-family: var(--primary-font);
 }
 
 /* header styling */
@@ -95,7 +92,7 @@ header {
     cursor: pointer;
 }
 
-.current-page {
+.current-page, .current-dest {
     border-bottom: 3px solid var(--primary-color);
 }
 
@@ -113,11 +110,13 @@ header {
     background: url(./assets/home/background-home-desktop.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 .home-main {
-    margin-top: 30vh;
+    /* margin: 25vh 0 0 0; */
+    min-height: 90vh;
+    padding-bottom: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -191,6 +190,60 @@ header {
 }
 /* end home styling */
 
+/* destination styling */
+.destination {
+    background: url(./assets/destination/background-destination-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.destination-txt-lg {
+    font-family: var(--primary-condensed);
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    margin: 2rem 8rem;
+}
+
+.destination-txt-lg span {
+    opacity: 0.25;
+    font-weight: bold;
+}
+
+.destination-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.destination-img {
+    width: 445px;
+    height: 445px;
+}
+
+.dest-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    width: 40vw;
+}
+
+.dest-link {
+    margin: 0 2rem 0 0;
+    padding: 1.5rem 0;
+    transition: border 0.3s ease;
+    font-family: var(--primary-condensed);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+}
+
+.dest-link:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    padding: 1.2rem 0;
+}
+/* end destination styling */
 
 
 /* media queries */
