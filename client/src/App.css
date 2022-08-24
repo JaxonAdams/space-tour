@@ -172,3 +172,66 @@ header {
     height: 450px;
 }
 /* end home styling */
+
+
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    /* header and homepage */
+    .homepage {
+        background: url(./assets/home/background-home-tablet.jpg);
+    }
+
+    .header-line {
+        display: none;
+    }
+
+    .navbar {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .home-main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vh;
+    }
+
+    .home-info {
+        width: 60vw;
+        text-align: center;
+        margin-bottom: 20vh;
+    }
+
+    .home-txt-lg {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    .home-title {
+        font-size: 150px;
+    }
+
+    .home-txt-sm {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+    .explore-btn {
+        width: 242px;
+        height: 242px;
+    }
+
+    .explore-effect {
+        width: 242px;
+        height: 242px;
+    }
+
+    .explore-btn:hover .explore-effect {
+        width: 400px;
+        height: 400px;
+    }
+    /* header and homepage */
+}
+
+@media screen and (max-width: 375px) {}
