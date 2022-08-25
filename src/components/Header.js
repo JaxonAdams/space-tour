@@ -19,8 +19,6 @@ const Header = () => {
         };
     }, []);
 
-    console.log(activeLink);
-
     return (
         <header>
             <div className='header-line' />
