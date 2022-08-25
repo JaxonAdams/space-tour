@@ -305,6 +305,19 @@ header {
     .home-title {
         font-size: 100px;
     }
+
+    .destination-img {
+        width: 325px;
+        height: 325px;
+    }
+
+    .dest-info {
+        width: 325px;
+    }
+
+    .dest-line {
+        width: 325px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -315,6 +328,12 @@ header {
 
     .header-line {
         display: none;
+    }
+
+    .dest-line {
+        display: block;
+        margin: 50px 0;
+        width: 573px;
     }
 
     .navbar {
@@ -371,6 +390,60 @@ header {
         height: 400px;
     }
     /* end header and homepage */
+
+    .dest-link {
+        padding: 1rem 0;
+    }
+
+    .dest-link:hover {
+        padding: 1rem 0;
+    }
+
+    .destination-txt-lg {
+        margin: 2rem 2rem 60px 2rem;
+        font-size: 20px;
+    }
+
+    .destination-container {
+        flex-direction: column;
+    }
+
+    .destination-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .dest-nav {
+        width: 285.5px;
+        margin: 0 auto 32px auto;
+    }
+
+    .dest-info {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .dest-info-title {
+        font-size: 80px;
+    }
+
+    .dest-info-txt {
+        width: 573px;
+    }
+
+    .dest-container {
+        justify-content: space-around;
+        width: 573px;
+    }
+
+    .dest-fact-container {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 580px) {
